@@ -1,4 +1,4 @@
-# FUNCTION APP FOR OIM #
+# Azure Function App for the Office for the Internal Market #
 
 ## CONTENTS ##
 
