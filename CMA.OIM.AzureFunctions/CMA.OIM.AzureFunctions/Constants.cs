@@ -12,10 +12,6 @@ namespace CMA.OIM.AzureFunctions
         internal const string OIM_TELEPHONE = "OIMTelephoneNumber";
         internal const string OIM_REPORTING_AS = "OIMReportingAs";
         internal const string OIM_REPORTING_AS_OTHER = "OIMReportingAsOther";
-        internal const string OIM_LOCATION_NAME = "OIMLocationNameOrNumber";
-        internal const string OIM_LOCATION_STREET = "OIMLocationStreet";
-        internal const string OIM_LOCATION_COUNTY = "OIMLocationCounty";
-        internal const string OIM_LOCATION_TOWN = "OIMLocationTownOrCity";
         internal const string OIM_LOCATION_POSTCODE = "OIMLocationPostcode";
         internal const string OIM_ORG_NAME = "OIMOrganisationName";
         internal const string OIM_AREA_OF_OPS = "OIMAreaOfOperation";
