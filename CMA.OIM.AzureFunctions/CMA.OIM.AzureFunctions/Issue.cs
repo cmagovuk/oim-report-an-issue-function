@@ -31,10 +31,6 @@ namespace CMA.OIM.AzureFunctions
                 string reporting_as = (string)record.reporting_as;
                 listItem[Constants.OIM_REPORTING_AS] = TranslateOne(reporting_as, "TRANSLATE_REPORTING_AS");   // Requires translation
                 listItem[Constants.OIM_REPORTING_AS_OTHER] = TruncateString((string)record.reporting_other);
-                listItem[Constants.OIM_LOCATION_NAME] = (string)record.addr_line_1;
-                listItem[Constants.OIM_LOCATION_STREET] = (string)record.addr_line_2;
-                listItem[Constants.OIM_LOCATION_TOWN] = (string)record.addr_town;
-                listItem[Constants.OIM_LOCATION_COUNTY] = (string)record.addr_county;
                 listItem[Constants.OIM_LOCATION_POSTCODE] = (string)record.addr_postcode;
 
                 if (reporting_as != "ind" && reporting_as != "other")
