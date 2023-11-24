@@ -40,9 +40,20 @@ namespace CMA.OIM.AzureFunctions
                     listItem[Constants.OIM_BUSINESS_SECTOR] = (string)record.business_sector;
                 }
 
-                listItem[Constants.OIM_ISSUE] = (string)record.issue;
+                if (record.issue != null)
+                {
+                    listItem[Constants.OIM_ISSUE] = (string)record.issue;
+                }
+                else
+                {
+                    listItem[Constants.OIM_ISSUE_SECTOR] = (string)record.issue_sector;
+                    listItem[Constants.OIM_ISSUE_DESCRIPTION] = (string)record.issue_description;
+                    listItem[Constants.OIM_ISSUE_IMPACT] = (string)record.issue_impact;
+                    listItem[Constants.OIM_ISSUE_REGS] = (string)record.issue_regs;
+                    listItem[Constants.OIM_ISSUE_REPORTED] = (string)record.issue_reported;
+                }
                 List<string> impact_areas = TranslateMulti(record.impact_area, "TRANSLATE_IMPACT_AREA");
-                listItem[Constants.OIM_ISSUE_IMPACT] = impact_areas; // Requires translation
+                listItem[Constants.OIM_ISSUE_IMPACT_AREA] = impact_areas; // Requires translation
                 listItem[Constants.OIM_ISSUE_IMPACT_OTHER] = TruncateString((string)record.impact_other);
                 listItem[Constants.OIM_SUBMISSION_ORIGIN] = "External";  // Fixed == External?
                 listItem[Constants.OIM_SUBMISSION_MANIFEST] = FormatDocuments(documents);

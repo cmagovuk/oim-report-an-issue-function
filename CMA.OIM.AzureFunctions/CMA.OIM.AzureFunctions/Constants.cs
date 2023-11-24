@@ -17,7 +17,12 @@ namespace CMA.OIM.AzureFunctions
         internal const string OIM_AREA_OF_OPS = "OIMAreaOfOperation";
         internal const string OIM_BUSINESS_SECTOR = "OIMBusinessSectors";
         internal const string OIM_ISSUE = "OIMInternalMarketIssue";
-        internal const string OIM_ISSUE_IMPACT = "OIMIssueImpactArea";
+        internal const string OIM_ISSUE_SECTOR = "OIMIssueSector";
+        internal const string OIM_ISSUE_DESCRIPTION = "OIMIssueDescription";
+        internal const string OIM_ISSUE_IMPACT = "OIMIssueImpact";
+        internal const string OIM_ISSUE_REGS = "OIMIssueRegs";
+        internal const string OIM_ISSUE_REPORTED = "OIMIssueReported";
+        internal const string OIM_ISSUE_IMPACT_AREA = "OIMIssueImpactArea";
         internal const string OIM_ISSUE_IMPACT_OTHER = "OIMIssueImpactAreaOther";
         internal const string OIM_SUBMISSION_ORIGIN = "OIMSubmissionOrigin";
         internal const string OIM_SUBMISSION_MANIFEST = "OIMSubmissionManifest";
